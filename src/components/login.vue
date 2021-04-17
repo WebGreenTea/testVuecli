@@ -101,8 +101,8 @@ export default {
             this.error = "*" + res.data.error;
           } else {
             localStorage.setItem("token", res.data.data);
-            this.$router.push("/");
-            //location.reload();
+            //this.$router.push("/");
+            location.reload();
           }
           
         })
